@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw; 
+}
+
+
+/* =========================================  HEADER  =========================================== */
+header{
+    height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==== NAV ===== */
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 9rem;
+    font-weight: bold;
+    color: white;
+    width: 10px;
+    text-align: center;
+    margin-left: 15%;
+}
+
+/* ===== VIDEO ===== */
+
+.nav-video{
+    position: absolute;
+    object-fit: cover;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100vw; 
+    height: 100vh;
+}
+
+.back-video{
+    z-index: -1;
+}
+
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* =========================================  MAIN  =========================================== */
+
+main{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+
+/* =========================================  FOOTER  =========================================== */
+
+footer{
+    background: linear-gradient(to right top, #FB625D, #FFCAC8);
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}

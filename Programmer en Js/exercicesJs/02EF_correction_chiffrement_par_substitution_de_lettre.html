@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chiffrement par substitution de lettre</title>
+    <style>
+        body{font-family:Arial,Helvetica,sans-serif}b{color:#57f}blockquote{font-family:Courier New,Courier,monospace;font-size:18px}hr{margin:20px 0}h3{color:#49808E}
+        span{font-family: monospace;font-size: 16px}
+    </style>
+</head>
+<body>
+    <h2>Chiffrement par substitution de lettre</h2>
+    <p>Votre équipe a bien travaillé et a terminé l’algorithme de création de l’alphabet crypté.<br>
+        Par contre, l’autre équipe a échoué sur sa mission : écrire le code qui utilise cet alphabet.
+        <p>
+        C’est pourtant simple : chaque lettre en clair doit être remplacée par son équivalent chiffré se trouvant à la même position dans l’alphabet.
+        <br>
+        On peut voir les correspondances ici : 
+        <br><br>
+        <span>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span><br>
+        <span>MULTIEDABCFGHJKNOPQRSVWXYZ</span>
+        </p>
+        Ainsi, A devient M, B devient U et N devient J ...
+        <hr>
+        Vous devez donc écrire le code qui permet de <b>chiffrer un message à partir d’une clé secrète</b> (vous pouvez réutiliser le code de l’exercice précédent)
+            
+    </p>
+    <script>
+
+        const secret_key = "MULTIMEDIA",
+              message    = "plus vous saurez regarder loin dans le passé plus vous verrez loin dans le futur";
+        let message_crypted = message.toUpperCase();
+
+        // On reprend le code qui permet de créer l'alphabet crypté
+
+        let alphabet         = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let alphabet_crypted = "";
+
+        for(let j=0; j<secret_key.length; j++){
+
+            let letter = secret_key.charAt(j);
+
+            if(!alphabet_crypted.includes(letter)){
+                alphabet_crypted += letter;
+                alphabet = alphabet.replace(letter, '');
+            }
+        }
+        alphabet_crypted += alphabet;
+
+        // on initialise l'alphabet pour qu'il est de nouveau 26 lettres
+        alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+        // on passe en revue chaque lettre de l'alphabet
+
+        for(let j=0; j<alphabet.length; j++){
+
+            // on cible bien les lettres en correspondance
+            let letterD = alphabet_crypted.charAt(j),
+                letterS =  alphabet.charAt(j);
+
+            // on utilise une expression régulière pour remplacer sur toute la chaine
+            message_crypted = message_crypted.replace(new RegExp(letterS, 'g'), letterD);
+        }
+        
+        document.write("<h3>Message final chiffré : "+message_crypted+"</h3>");
+    </script>
+</body>
+</html>

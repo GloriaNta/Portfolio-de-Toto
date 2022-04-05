@@ -1,0 +1,9 @@
+/* selecteurs-5.css : feuille de style qui s'applique à la page selecteurs-5.html */
+
+a[title] {
+	color: red;
+}
+
+a[title="Blabla"] {
+	color: blue;
+}

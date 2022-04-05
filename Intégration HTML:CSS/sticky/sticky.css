@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+dl{
+    margin: 0;
+    padding: 24px 0 0 0;
+}
+
+dt{
+    background: #B8C1C8;
+    border-bottom: 1px solid #989EA4;
+    border-top: 1px solid #717D85;
+    color: #FFF;
+    margin: 0;
+    padding: 2px 0 0 12px;
+    position: sticky;
+    top: 1px;
+    font-size: 32px;
+}
+
+dd{
+    font-size: 45px;
+    font-family: 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, 'sans-serif';
+    margin: 0;
+    padding: 0 0 0 12px;
+    white-space: nowrap;
+}
+
+dd + dd{
+    border-top: 1px solid #CCC;
+}

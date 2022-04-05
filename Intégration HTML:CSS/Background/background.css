@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+#container{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    background-image: url(img/Noir\ et\ Or\ Cercle\ Immobilier\ Logo.png), url(img/IMG-2906.jpg);
+    background-repeat: no-repeat;
+    background-position: right, top;
+    background-size: 25%, cover;
+}
+

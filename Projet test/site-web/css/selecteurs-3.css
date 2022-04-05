@@ -1,0 +1,5 @@
+/* selecteurs-3.css : feuille de style qui s'applique à la page selecteurs-3.html */
+
+main > .texte-rouge{
+	color: red;
+}

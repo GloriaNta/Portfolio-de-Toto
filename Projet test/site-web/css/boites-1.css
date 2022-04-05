@@ -1,0 +1,38 @@
+/* boites-1.css : feuille de style du fichier boites-1.html */
+
+    /* coloration des éléments de types block */
+
+nav, p, section, footer{
+    background-color: grey;
+}
+
+section p{
+    background-color: lightgray;
+}
+
+    /* coloration des éléments de types inline */
+
+a, em, strong, img{
+    background-color: purple;
+}
+
+a{
+    color: white;
+}
+
+    /* donne une hauteur à certains éléments de types block pour bien les indentifier (les éléments englobants et les éléments vides) */
+
+nav, section, footer{
+    height: 100px;
+}
+
+    /* test des caracteristiques des éléments inline */
+    
+    nav :first-child{
+        width: 200px;
+        height: 200px;
+    }/* -> ne fonctionne pas car a est un l'élément inline */
+
+    nav a{
+        margin-right: 10px;
+    }

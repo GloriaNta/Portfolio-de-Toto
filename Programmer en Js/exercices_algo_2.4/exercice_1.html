@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercice 1</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        float: left;
+        margin: 6px;
+        cursor: pointer;
+      }
+
+      #bt_red {
+        background-color: red;
+      }
+
+      #bt_green {
+        background-color: greenyellow;
+      }
+
+      #bt_yellow {
+        background-color: yellow;
+      }
+
+      #bt_blue {
+        background-color: blue;
+      }
+
+      section {
+        overflow: hidden;
+        width: 425px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <div id="bt_red"></div>
+      <div id="bt_green"></div>
+      <div id="bt_yellow"></div>
+      <div id="bt_blue"></div>
+    </section>
+    <p><a id="total" href="#">Afficher les décomptes dans la console</a></p>
+    <script>
+      /**
+       * SIMON
+       * Dans l'optique de créer un jeu de SIMON, nous avons mis en place 4 bouttons de couleur.
+       * https://www.youtube.com/watch?v=tkUM7cuYYpw
+       *
+       * 1 - Placez un gestionnaire d'évènement sur chaque boutons
+       * 2 - A chaque clique, affichez "click" dans la console
+       * */
+
+      // votre code ici
+
+      
+       function onClick(){
+         console.log("click ! ")
+       }
+
+      document.getElementById("bt_red") .addEventListener("click",onClick);
+      document.getElementById("bt_green") .addEventListener("click",onClick);
+      document.getElementById("bt_blue") .addEventListener("click",onClick);
+      document.getElementById("bt_yellow") .addEventListener("click",onClick);
+
+
+
+
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+/* selecteurs-2.css : feuille de style qui s'applique à la page selecteurs-2.html */
+
+.section-cible > p {
+	color: red;
+}

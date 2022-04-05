@@ -1,0 +1,9 @@
+/* selecteurs-4.css : feuille de style qui s'applique à la page selecteurs-4.html */
+
+h1, h2, h3, h4, h5, h6 {
+	color: red;
+}
+
+.intro, .description {
+	color: blue;
+}

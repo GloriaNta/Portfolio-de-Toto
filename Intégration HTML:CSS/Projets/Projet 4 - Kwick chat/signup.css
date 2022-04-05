@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+body {
+    background: #DAF7E4;
+    font-family: "Roboto", sans-serif;    
+}
+
+#container{
+    position: relative;
+    z-index: 1;
+    max-width: 767px;
+    margin: auto;
+}
+
+
+/* NAV */
+  
+.nav>li{
+    margin-top: 10px;
+    padding: 25px;
+}
+
+.signup{
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #5FA2A3;
+    text-decoration: solid green;
+}
+
+.login{
+    color: rgb(126, 126, 126);
+}
+
+.login:hover, .signup:hover{
+    color: #70C1B3;
+}
+
+
+/* FORM */
+
+.form{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+    background: white;
+    opacity: 0.9;
+    border-radius: 25px;
+    max-width: 360px;
+    margin: 100px;
+    padding: 45px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input{
+    font-family: "Roboto", sans-serif;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    background: #81B994;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.form button:hover,.form button:active,.form button:focus{
+    background: #A0D3B1;
+}
+
+.form .message{
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.form .message a{
+    color: #81B994;
+    text-decoration: none;
+}
+
+.form .message a:hover{
+    color: #70C1B3;
+    text-decoration: none;
+}
+
+.form .register-form{
+    display: none;
+}
+
+

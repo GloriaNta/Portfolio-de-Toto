@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+*{
+    font-family: 'Poppins', sans-serif; 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw; 
+}
+
+
+/* =====================================  HEADER  ========================================== */
+header{
+    height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==== NAV ===== */
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 9rem;
+    font-weight: bold;
+    color: white;
+    width: 10px;
+    text-align: center;
+    margin-left: 15%;
+}
+
+
+/* ===== VIDEO ===== */
+
+.nav-video{
+    position: absolute;
+    object-fit: cover;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100vw; 
+    height: 100vh;
+}
+
+.back-video{
+    z-index: -1;
+}
+
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* =====================================  MAIN  ========================================== */
+
+main{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+
+/* ==== TICKET D'OR ==== */
+
+h2{
+    color: #FFFFFF;
+    background: #FFFFFF;
+    text-shadow: 2px 2px 0 #F9AAA7, 2px -2px 0 #F9AAA7, -2px 2px 0 #F9AAA7, -2px -2px 0 #F9AAA7, 2px 0px 0 #F9AAA7, 0px 2px 0 #F9AAA7, -2px 0px 0 #F9AAA7, 0px -2px 0 #F9AAA7;
+}
+
+.ticket{
+    margin-top: 90px;
+    margin-bottom: 90px;
+    width: 60%;
+}
+
+/* ==== VINYLE ==== */
+
+.vinyle{
+    width: 70%;
+}
+
+.cd{
+    width: 100%;
+}
+
+.buy{
+    font-weight: bold;
+}
+
+button{
+    background-color: #FB625D;
+    color: white;
+    width: 25%;
+    height: 7%;
+    border: none;
+}
+
+/* ==== ALBUM ===== */
+
+.vinyle2{
+width: 100%;
+}
+
+/* ==== TRACKLIST ==== */
+
+.vinyle3{
+    width: 100%;
+}
+
+h2{
+    margin-bottom: 70px;
+}
+
+p{
+    margin-top: 70px;
+}
+
+.song{
+    border-bottom:1px solid #F9AAA7;
+    background-color: white;
+    color: black;
+    margin-left: 55px;
+    text-align: left;
+}
+
+.song:hover{
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 0 1rem rgba(0, 0,0,.5);
+}
+
+#play{
+    background-color: white;
+    color: black;
+    width: auto;
+}
+
+
+
+
+
+/* =========================================  FOOTER  =========================================== */
+
+footer{
+    background: linear-gradient(to right top, #FB625D, #FFCAC8);
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Construction de l'alphabet crypté</title>
+    <style>
+        body{font-family:Arial,Helvetica,sans-serif}b{color:#57f}blockquote{font-family:Courier New,Courier,monospace;font-size:18px}hr{margin:20px 0}h3{color:#49808E}
+    </style>
+</head>
+<body>
+    <h2>Construction de l'alphabet crypté</h2>
+    <p>Pour cette seconde séance du club du chiffre, toute l’équipe est mis à contribution afin de développer un chiffre de César plus solide.<br>
+        Le club part de cette citation de <a href="https://fr.wikipedia.org/wiki/Auguste_Kerckhoffs" target="_blank">Auguste Kerckhoffs</a> :
+        <blockquote>“La sécurité d’un système de cryptement ne soit pas dépendre de la préservation du secret de l’algorithme. La sécurité ne repose que sur le secret de la clef”</blockquote>           
+            Il est donc décidé de fabriquer le décalage des lettres - non pas à partir d’un nombre comme le ROT13 - mais à partir d’une clé secrète qui sera un mot.<br>            
+            L’alphabet crypté commencera par ce mot dont les lettres sont unique, et sera suivie par le reste de l’alphabet.
+            <p>
+            Exemple : notre clé sera le mot <strong>MULTIMEDIA</strong><br><br>
+            
+            1er étape : on retire les lettres en doublon pour que chaque lettre soit unique : <strong>MULTIEDA</strong><br>
+            <br><br>
+            2eme étape : on place le reste des lettres dans l’ordre de l’alphabet. Notre alphabet crypté sera donc :<br>
+            <br><br><strong>MULTIEDABCFGHJKNOPQRSVWXYZ</strong>
+            </p>
+            <hr>
+            A vous de jouer : Votre but est d’écrire le code qui permet d’<b>afficher un alphabet crypté à partir d’une clé donnée.</b>  
+    </p>
+    <script>
+
+        const secret_key = "MULTIMEDIA";
+
+        // écrivez votre code ici
+        
+        document.write("<h3>Alphabet crypté : </h3>");
+    </script>
+</body>
+</html>

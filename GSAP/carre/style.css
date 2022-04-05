@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.carre{
+    display: inline-block;
+    height: 100px;
+    width: 100px;  
+    margin: 30px;
+}
+
+.destination{
+    margin-left: 300px;
+    border-style: solid;
+}
+
+#blue{
+    background-color: lightskyblue;
+}
+
+#green{
+    background-color: lightgreen;
+}
+
+#red{
+    background-color: red;
+}

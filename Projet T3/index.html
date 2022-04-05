@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projet T3 - Linx</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+
+    <!-- Feuille de style -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <!-- jQuery et Bootstrap-->
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js" defer></script>
+    <script src="https://unpkg.com/bootstrap@4.3.1/dist/js/bootstrap.min.js" defer></script>
+
+    <!-- SDK Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js" defer></script>
+    
+    <script src="authentification.js" type="module" defer></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="color: aliceblue;" href="#"><h1>LINX</h1></a>
+            <button class="btn btn-secondary" style="display: none;" id="logged-in"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    style="color: aliceblue;" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                    <path fill-rule="evenodd"
+                        d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+            </svg></button><!-- BUTTON LOGOUT / AFFICHER SI CONNECTÉ -->
+
+        </div>
+    </nav>
+
+    <!-- =================================== -->
+    <!-- LOGIN PAGE / AFFICHER SI DECONNECTÉ -->
+    <!-- =================================== -->
+
+    <div id="logged-out" class="row">
+        <div class="col-md-6">
+            <h2 class="mb-4">Connexion</h2>
+            <form class="col col-md-6" id="loginForm">
+                <div class="form-group">
+                    <label for="loginField">Login</label>
+                    <input type="login" class="form-control" id="loginField" placeholder="Login">
+                </div>
+                <div class="form-group">
+                    <label for="passwordField">Password</label>
+                    <input type="password" class="form-control" id="passwordField" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Se connecter</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- ====================== -->
+    <!-- AFFICHER SI CONNECTÉ -->
+    <!-- ====================== -->
+
+    <div id="logged-in" class="row">
+
+        <!-- CARD -->
+
+        <div class=" col card card-body m-4" id="card">
+            <button class="btn btn-ligth" id="buttonDelete"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="delete bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg></button>
+            <!--BUTTON DELETE -->
+
+            <h1 class="card-tittle">Tittle</h1>
+            <a href="url" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    fill="currentColor" class="link bi bi-link" viewBox="0 0 16 16">
+                    <path
+                        d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                    <path
+                        d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
+                </svg></a><!-- LINK -->
+            <p>Descritption</p>
+        </div>
+
+
+        <div class="col card card-body m-4" id="card">
+            <button class="btn btn-ligth" id="buttonDelete"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="delete bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg></button>
+            <!--BUTTON DELETE -->
+
+            <h1 class="card-tittle">Tittle</h1>
+            <a href="url" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    fill="currentColor" class="link bi bi-link" viewBox="0 0 16 16">
+                    <path
+                        d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                    <path
+                        d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
+                </svg></a><!-- LINK -->
+            <p>Descritption</p>
+        </div>
+
+
+        <div class="col card card-body m-4" id="card">
+            <button class="btn btn-ligth" id="buttonDelete"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="delete bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg></button>
+            <!--BUTTON DELETE -->
+
+            <h1 class="card-tittle">Tittle</h1>
+            <a href="url" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                    fill="currentColor" class=" link bi bi-link" viewBox="0 0 16 16">
+                    <path
+                        d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                    <path
+                        d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
+                </svg></a><!-- LINK -->
+            <p>Descritption</p>
+        </div>
+
+
+        <!-- BUTTON ADD -->
+        
+            
+
+            <!-- ================================= -->
+            <!-- AFFICHER LORS DU CLICK BUTTON ADD -->
+            <!-- ================================= -->
+        <!-- Button add modal -->
+
+        <div class="col fixed-bottom add">
+            <button type="button" id="buttonAdd" class="btn btn-outline-light rounded-pill" data-bs-toggle="modal" data-bs-target="#addModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+            </svg>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" id="addModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Add a new link</h5>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" method="get" class="addform">
+                                <div class="form">
+                                    <label for="tittle">Tittle</label>
+                                    <input type="text" name="name" id="tittle" required>
+                                </div>
+                                <div class="form">
+                                    <label for="url">Url</label>
+                                    <input type="url" name="url" id="url" required>
+                                </div>
+                                <div class="">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary btnClose" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="addLinka">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+
+</body>
+
+</html>

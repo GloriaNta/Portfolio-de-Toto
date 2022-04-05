@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Encryptage du chiffre de cesar</title>
+    <style>
+        body{font-family:Arial,Helvetica,sans-serif}b{color:#57f}blockquote{font-family:Courier New,Courier,monospace;font-size:18px}hr{margin:20px 0}h3{color:#49808E}
+        span{font-family: monospace;font-size: 16px}
+    </style>
+</head>
+<body>
+    <h2>Encryptage du chiffre de cesar</h2>
+    <p>Pour terminé, le club du chiffre souhaite que écriviez le code complet du chiffre de César.<br>
+        Précédemment - dans le chapitre “Code ASCII et code de caractères” - vous avez écrit le code de décryptage du chiffre de César.<br>
+        <br>
+        Vous devez désormais écrire le code d’encryptage pour boucler le sujet.
+        <hr>
+        Votre mission est d’<b>afficher de manière précise - avec le templating - le message en clair et le message encrypté avec le chiffre de César</b>,comme ci-dessous :
+        
+        <br><br>
+        <span>SI VOUS LISEZ CE MESSAGE</span><br>
+        <span>FV IBHF YVFRM PR ZRFFNTR</span>
+  
+    </p>
+    <script>
+
+        let message    = "les machines un jour pourront resoudre tous les problemes mais jamais aucune d entre elles ne pourra en poser un";
+
+        // on initialise les variables et contantes utilent pour notre algorithme
+
+        let message_crypted = '',
+            ascii = 0;
+        const nb_letter = message.length;
+
+        // on passe en majuscule
+        message = message.toUpperCase();
+
+        // on passe en revue chaque lettre du message chiffré
+
+        for(let j = 0; j<nb_letter; j++){
+
+            // on récupére le code ascii de la lettre
+            ascii = message.charCodeAt(j);
+
+            // on intervient que si ce n'est pas un espace (code ASCII de 32)
+            if(ascii != 32){
+
+                // on fait le décalage vers la droite
+                ascii += 13;
+
+                // si on sort de l'alphabet, on revient à la fin.
+                if(ascii>90){                      
+                    ascii -= 26;
+                }
+            }
+
+            // on concatène la lettre déchiffré au message
+            message_crypted += String.fromCharCode(ascii);
+        }
+        
+        document.write(`<h3><span>${message}</span><br><span>${message_crypted}</span><br></h3>`);
+    </script>
+</body>
+</html>

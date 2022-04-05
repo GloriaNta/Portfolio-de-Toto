@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Décryptez du message numéro 2</title>
+    <style>
+        body{font-family:Arial,Helvetica,sans-serif}b{color:#57f}blockquote{font-family:Courier New,Courier,monospace;font-size:18px}hr{margin:20px 0}h3{color:#49808E}
+    </style>
+</head>
+<body>
+    <h2>Décryptez du message numéro 2</h2>
+    <p>Votre perspicacité vous a permis de déchiffrer le code de César, bravo.<br><br>
+    Vous savez désormais qu'un mystérieux club du chiffre doit se voir prochainement dans un bar.<br>
+    Vous vous demandez encore si vous allez vous inviter au bar Babbage quand un bout de papier laissé sur votre bureau vous accueille ce matin.<br>
+    <br>Le message est clair :<br>
+            
+    <blockquote> fV iBhf YVfRM PR ZRffNTR IBHf RGRf yR ovRaiRahR yR eRaQRM iBhf N yvRhK N ivaTG uRheRf  </blockquote>
+            
+    Vous êtes clairement repéré ...<br>
+    Mais ce nouveau message est différent du premier ... <br>
+    <hr>        
+    Avec vos nouvelles connaissances, <b>adaptez votre code de déchiffrement pour qu'il puisse fonctionner sur les deux messages.</b>
+    </p>
+    <script>
+
+    /*  le code de déchiffrement est identique au premier, mais on formate auparavant le message chiffré
+        pour que tout les caractères soient en majuscules. 
+    */
+    let message_crypted = " fV iBhf YVfRM PR ZRffNTR IBHf RGRf yR ovRaiRahR yR eRaQRM iBhf N yvRhK N ivaTG uRheRf  ";
+
+    message_crypted = message_crypted.toUpperCase().trim();
+    
+
+
+    // on initialise les variables et contantes utilent pour notre algorythme
+
+    let result = '',
+        ascii = 0;
+    const nb_letter = message_crypted.length;
+
+    // on passe en revue chaque lettre du message chiffré
+
+    for(let j = 0; j<nb_letter; j++){
+
+        // on récupére le code ascii de la lettre
+        ascii = message_crypted.charCodeAt(j);
+
+        // on intervient que si ce n'est pas un espace (code ASCII de 32)
+        if(ascii != 32){
+
+            // on fait le décalage vers la gauche
+            ascii -= 13;
+
+            // si on sort de l'alphabet, on revient à la fin.
+            if(ascii<65){                      
+                ascii += 26;
+            }
+        }
+
+        // on concatène la lettre déchiffré au message
+        result += String.fromCharCode(ascii);
+    }
+
+    document.write("<h3>Message 2 déchiffré : "+result+"</h3>");
+    </script>
+</body>
+</html>

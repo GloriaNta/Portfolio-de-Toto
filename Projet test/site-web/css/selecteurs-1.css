@@ -1,0 +1,13 @@
+/* selecteurs-1.css : feuille de style qui s'applique à la page selecteurs-1.html */
+
+.texte-rouge {
+	color: red;
+}
+
+strong {
+	color: blue;
+}
+
+em {
+	color: green;
+}

@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+body{
+    background-color:rgb(36, 36, 36);
+    max-width: 100vw;
+    min-height: 100vh;
+    margin: auto;
+    color: aliceblue;
+}
+
+/* NAV */
+nav{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+}
+
+/* CARD */
+.card{
+    margin-top: 50px;
+    display: flex;
+    width: 15px;
+    justify-content: space-around;
+    color: #151515;
+    background-color:ghostwhite;
+    border: 1px solid rgba(94, 87, 87, 0.445);
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto,
+}
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; 
+}
+
+/* ADD FORM */
+#addForm{
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+svg, button{
+    cursor: pointer;
+}
+
+/* BUTTON */
+.btnadd{
+    margin-bottom: 30px;
+
+}
+
+.add{
+    display: flex;
+    align-items:flex-end;
+    color: #151515;
+}
+
+#buttonDelete{
+    float: right;
+}
+
+/* HOVER */
+.delete:hover{
+    color: #DD403A;
+}
+
+.link:hover{
+    color: #226CE0;
+}

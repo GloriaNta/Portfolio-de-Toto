@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Déterminer la longueur du message</title>
+    <style>
+        body{font-family:Arial,Helvetica,sans-serif}b{color:#57f}blockquote{font-family:Courier New,Courier,monospace;font-size:18px}hr{margin:20px 0}h3{color:#49808E}
+    </style>
+</head>
+<body>
+    <h2>Déterminier la longueur du message crypté</h2>
+    <p>Vous travaillez au sein d'une grande entreprise au pôle développement web.<br>
+            Un lundi matin, l'un de vos collège découvre - coincé dans les rouleaux de la photocopieuse - un étrange message.<br><br>Celui ci est retranscrit ici :
+            <blockquote>YR PYHO QH PUVSSER FR ERHAVEN YHAQV CEBPUNVA CBHE YR CERZVRE PUNYYRATR QR YN FNVFBA NH ONE ONOONTR N ONFGVYYR</blockquote>
+            Personne ne comprend ce message et n'y prête d'importance, sauf vous.<br>
+            Qui à rédigé et encodé ce message ? Dans quel but ? Comment le décoder ?<br>
+            Vous décidez d'investiguer seul sur ces questions.<br>
+        <hr>
+            La première chose à faire et c'est votre mission, c'est de <b>déterminer le nombre de caractères que contient le message (espaces compris)</b>
+             </p>
+    <script>
+        
+
+        // on stock le message crypté en mémoire dans une constante
+        const message_crypted = "YR PYHO QH PUVSSER FR ERHAVEN YHAQV CEBPUNVA CBHE YR CERZVRE PUNYYRATR QR YN FNVFBA NH ONE ONOONTR N ONFGVYYR";
+        
+        // on calcul le nombre de caractères avec la propriété length
+        const nb_letter = message_crypted.length;
+        
+        document.write("<h3>Résultat : "+nb_letter+" caractères</h3>");
+    </script>
+</body>
+</html>

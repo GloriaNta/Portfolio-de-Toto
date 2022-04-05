@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+*{
+    box-sizing: border-box;
+}
+
+#container{
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid black;
+    position: absolute;
+    padding: 20px;
+}
+
+header, main, footer{
+    border: 1px solid orange;
+}
+
+header{
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    top: 0;
+    left: 100px;
+}
+
+main{
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    top: 300px;
+    left: 100px;
+}
+
+footer{
+    position: absolute;
+    width: 600px;
+    height: 100px;
+    bottom: 50px;
+    left: 100px;
+}
+
+.un{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 0px;
+    left: 0;
+    z-index: 2;
+    background-color: orchid;
+}
+
+.deux{
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    top: 200px;
+    left: 100px;
+    z-index: 1;
+    background-color:plum;
+}

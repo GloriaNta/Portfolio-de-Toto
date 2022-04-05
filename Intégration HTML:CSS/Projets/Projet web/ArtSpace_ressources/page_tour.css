@@ -1,0 +1,412 @@
+@charset "utf-8";
+@font-face {
+    font-family: "Extra light";
+    src: url("pragmatica-extralight-cufonfonts-webfont.woff") format("woff");
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+section{
+    padding-bottom: 10%;
+}
+
+article{
+    margin: auto;
+    padding: auto;
+    width: 80%;
+    padding-top: 5%;
+}
+
+/**/
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.two, .four, .six, .eight, .ten, .twelve{
+    background-color: rgb(241, 241, 241);
+}
+
+button{
+    border-radius: 30px;
+    height: 60px;
+    width: 180px;
+    margin: 5px;
+    margin-top: 70px;
+    font-size: 1.1rem;
+}
+
+                                /* HEADER */
+
+header{
+    display: flex;
+    flex-direction: row;
+}         
+/* LOGO */
+
+.logo{
+    padding: 38px;
+    height: 34px;
+    width: 122px;
+}
+
+/* NAV */
+ul{
+   overflow: hidden;
+}
+
+li.nav{
+    display: inline;
+    float: right; 
+}
+
+li:hover{
+    text-decoration: underline;
+}
+
+.nav{
+    display: block;
+    padding: 15px;
+    color: black;
+}
+
+                                    /* MAIN */
+/* SECTION 1 */
+.one{
+    background-image:url("../ArtSpace_ressources/assets/hero-tour.jpg");
+    min-height: 800px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+h1{
+    font-size: 80px;
+    margin-top: 0%;
+    padding-top: 14%;
+}
+
+
+.yellow{
+    background-color: rgb(228, 217, 119);
+    border: none;
+}
+
+.transparent{
+    background-color: transparent;
+    border: none;
+    overflow: hidden;
+    color: white;
+}
+
+.yellow:hover{
+    background-color: black;
+    color: rgb(228, 217, 119);
+}
+
+.transparent:hover{
+    background-color: rgb(24, 23, 23);
+}
+
+.sara, .fine{
+    margin-left: 90%;
+}
+
+.sara{
+    margin-top: 5%;
+}
+
+
+/* SECTION 2 */
+.press{
+    padding: 20px;
+    align-items: flex-end;
+    padding-bottom: 0px;
+}
+
+
+/* SECTION 3 */
+section.three{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2{
+    font-size: 25pt;
+}
+
+p.three{
+    width: 42%;
+}
+.slide{
+    display: flex;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../ArtSpace_ressources/assets/large-cinema-display.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 630px;
+    width: 100%;  
+}
+
+.left, .right{
+    width: 30px;
+}
+
+/* SECTION 4 */
+section.four{
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 5%;
+}
+
+p.four{
+    width: 40%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+/* SECTION 5 */
+section.five{
+    text-align: left;
+}
+
+img.five{
+    width: 100%;
+}
+
+p.five{
+    width: 46%;
+    margin-bottom: 50px;
+}
+
+/* SECTION 6 */
+section.six{
+    text-align: left;
+}
+
+p.six{
+    width: 60%;
+    margin-bottom: 45px;
+}
+
+img.six{
+    width: 100%;
+}
+
+/* SECTION 7 */
+section.seven{
+    text-align: left;
+}
+
+p.seven{
+    width: 58%;
+    margin-bottom: 45px;
+}
+
+img.seven{
+    width: 100%;
+}
+
+
+p.i{
+    margin-top: 0px;
+}
+
+.icon{
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    padding: 50px;
+    padding-bottom: 0px;
+}
+
+.iconun, .icondeux, .icontrois{
+    width: 70%;
+    padding-right: 30px;
+}
+
+/* SECTION 8 */
+p.eight{
+    width: 57%;
+    margin-bottom: 45px;
+}
+
+img.eight{
+    width: 100%;
+}
+
+/* SECTION 9 */
+section.nine{
+    display: flex;
+    align-items: center;
+}
+
+article.nine{
+    margin-left: 10%;
+    width: 65%;
+}
+
+p.nine{
+    width: 50%;
+}
+
+img.tour{
+    margin-top: 20%;
+}
+
+/* SECTION 10 */
+section.ten{
+    padding-bottom: 11px;
+}
+
+p.ten{
+    width: 60%;
+}
+
+.tendeux{
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    padding-bottom: 0;
+    display: flex;
+    flex-wrap: row;
+    align-items: center;
+}
+.trois{
+    padding: 9%
+}
+
+/* SECTION 11 */
+section.eleven{
+    display: flex;
+    margin-left: 10%;
+}
+
+article.eleven{
+    margin: 12%;
+}
+
+/* SECTION 12 */
+
+p.twelve{
+    width: 60%;
+}
+
+article.twelve{
+    margin-bottom: 3%;
+}
+
+/* SECTION 13 */
+                /* ARTICLE 1 */
+section.thirteen{
+    display: flex;
+    align-items: center;
+
+}
+
+span{
+    background-color: rgb(139, 230, 166);
+    background-size: 10%;
+}
+
+img.rob{
+    border-radius: 50%;
+    width: 13%;
+    margin-top: 20px;
+}
+
+p.italic{
+    margin-left: 9%;
+    width: 62%;
+}
+
+p.rob{
+    width: 80%;
+}
+
+article.rob{
+    margin-left: 10%;
+    width: 40%;
+}
+
+                /* ARTICLE 2 */
+.contributors{
+    width: 40%;
+}
+
+p.contributors{
+    width: 80%;
+}
+
+
+/* SECTION 14 */
+section.fourteen{
+    display: flex;
+    align-items: center;
+}
+
+article.fourteen_un{
+    width: 32%;
+    margin-right: 50px;
+}
+
+article.fourteen_deux{
+    width: 31%;
+    margin-left: 50px;
+}
+
+/* FOOTER */
+footer{
+    background-color: black; 
+    color: whitesmoke;
+    display: flex;
+}
+
+.liste{
+    margin: 6%;
+    padding: 2%;
+    width: 9%;
+}
+
+.footer{
+    color: rgb(201, 201, 201);
+    overflow: hidden;
+}
+
+h4{
+    color: white;
+}
+
+li{
+    display: inline;
+}
+
+.footer a{
+    color: grey;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+p.footer{
+    color: grey;
+}
+
+

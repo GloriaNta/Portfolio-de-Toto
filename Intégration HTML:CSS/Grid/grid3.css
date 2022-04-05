@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+*{box-sizing: border-box;}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    width: 100%;
+    margin: auto;
+    border: 2px solid rgb(182, 144, 218);
+    padding: 5px; 
+}
+
+
+header{
+    grid-column: 3 / span 8;
+    grid-row: 1;
+    background-color: #7cc1d4;
+    display: grid;
+    grid-template-columns: (12,1fr);
+    grid-template-rows: auto;
+}
+
+.logo{
+    grid-column: 11 / span 3;
+    grid-row: 1;
+    background-color: #a7cf77;
+}
+
+nav{
+    grid-column: 7 / span 6;
+    grid-row: 1;
+    background-color: #a7cf77;
+}
+
+main{
+    grid-column: 3 / span 8;
+    grid-row: 2;
+    background-color: seashell;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap : 20px
+}
+
+article{
+    border : 1px solid black;
+    border-radius: 5px;
+    padding : 20px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.illustration{
+    grid-column: 7 / span 8;
+    grid-row: 1;
+    background-color: #77adcf;
+}
+
+.creative{
+    grid-column: 1 / span 6;
+    grid-row: 1;
+    background-color: rgb(182, 144, 218);
+}
+
+.illustration{
+    grid-column: 7 span 6;
+    grid-row: 1;
+}
+
+.pictol1{
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    background-color: rebeccapurple;
+}
+
+.pictol2{
+    grid-column: 5 / span 4;
+    grid-row: 2;
+    background-color: orchid;
+}
+
+.pictol3{
+    grid-column: 9 / span 4;
+    grid-row: 2;
+    background-color: plum;
+}
+
+
+footer{
+    grid-column: 3 / span 8;
+    grid-row: 3;
+    background-color: #77cfba;
+}

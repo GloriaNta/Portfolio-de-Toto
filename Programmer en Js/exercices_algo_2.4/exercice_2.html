@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercice 2</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        float: left;
+        margin: 6px;
+        cursor: pointer;
+      }
+
+      #bt_red {
+        background-color: red;
+      }
+
+      #bt_green {
+        background-color: greenyellow;
+      }
+
+      #bt_yellow {
+        background-color: yellow;
+      }
+
+      #bt_blue {
+        background-color: blue;
+      }
+
+      section {
+        overflow: hidden;
+        width: 425px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>SIMON GAME</h1>
+    <section>
+      <div id="bt_red"></div>
+      <div id="bt_green"></div>
+      <div id="bt_yellow"></div>
+      <div id="bt_blue"></div>
+    </section>
+    <p><a id="total" href="#">Afficher les décomptes dans la console</a></p>
+    <script>
+      /**
+       * SIMON
+       *
+       * Nous voulons désormais compter le nombre de click sur chaque bouton.
+       * Vous devez implémenter les fonctionnalités suivantes :
+       *
+       * 1 - A chaque click sur un bouton, on ajoute 1 au décompte
+       * 2 - Si on click sur le lien, on affiche dans la console les décomptes
+       * */
+
+      // votre code ici
+
+      const nbClick = {
+        bt_red: 0,
+        bt_green: 0,
+        bt_blue: 0,
+        bt_yellow: 0
+      };
+
+      function onClick(event){
+        const target = event.target;
+        const id = target.id;
+        nbClick[id]++;
+      }
+
+      document.getElementById("bt_red") .addEventListener("click",onClick);
+      document.getElementById("bt_green") .addEventListener("click",onClick);
+      document.getElementById("bt_blue") .addEventListener("click",onClick);
+      document.getElementById("bt_yellow") .addEventListener("click",onClick);
+
+      document.getElementById("total") .addEventListener("click", function(event){
+        console.log(`Rouge: ${nbClick.bt_red}\nVert: ${nbClick.bt_green}\nBleu: ${nbClick.bt_blue}\n Jaune: ${nbClick.bt_yellow}\n `)
+      });
+    </script>
+  </body>
+</html>

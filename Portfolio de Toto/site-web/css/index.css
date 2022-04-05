@@ -1,0 +1,36 @@
+/* index.css : feuille de style qui s'applique uniquement à la page d'accueil (index.html) */
+
+	/* Contenu principal du site web (.site-main) */
+
+.site-main header img{
+	border-radius: 50%;
+	border: 10px solid white;
+	box-shadow: 0px 0px 20px #092043;
+	margin-bottom: 13px;
+}
+
+.site-main header ul {
+	width: 375px;
+	padding-left: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.site-main article video{
+	border-radius: 50px;
+	margin-bottom: 8px;
+}
+
+.site-main article nav,
+.site-main aside nav {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.site-main aside p{
+	font-size: 20px;
+}
+
+
+

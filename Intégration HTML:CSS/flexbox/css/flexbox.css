@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+
+
+body{background-color:skyblue;}
+
+/* # pour les div */
+
+#container{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    max-width: 1400px;
+    margin:auto;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+header, main, footer{
+    border: 1px solid orange;
+    margin-bottom: 30px;
+}
+
+header, footer{
+    height: 200px;
+}
+
+main{
+    height: 600px;
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+nav, .logo, section, article{
+    border: 1px solid goldenrod;
+}
+
+.logo{
+    width: 20%;
+}
+
+nav{
+    width: 60%;
+}
+
+section.trio, section.huit{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+}
+
+.trio article{
+    width: 30%;
+}
+
+section.trio-v{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.trio-v article{
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.huit article{
+    width: 20%;
+    margin: 10px;
+}
+
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+article.bas{
+    align-self: end;
+}

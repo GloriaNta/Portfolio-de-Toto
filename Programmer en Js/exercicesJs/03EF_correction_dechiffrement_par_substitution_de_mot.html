@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chiffrement par substitution de mots</title>
+    <style>
+        body{font-family:Arial,Helvetica,sans-serif}b{color:#57f}blockquote{font-family:Courier New,Courier,monospace;font-size:18px}hr{margin:20px 0}h3{color:#49808E}
+    </style>
+</head>
+<body>
+    <h2>Déchiffrement par substitution de mots</h2>
+    <p>
+            Ca y est!<br>
+            Vous venez de rejoindre le club du chiffre : Il est composé d’amateurs en cryptologie, chiffrement et cryptanalyse de tout âge et de toute profession.<br>          
+            Le club se mesure à d’autres clubs internationaux dans l’unique but d’être reconnu comme le plus grand club de chiffrement du monde !<br>
+            <br>
+            Pour cette première séance, une mission précise attend les nouveaux : il s'agit de déchiffrer un message par substitution de mots.<br>
+            <br>
+            Le principe est simple :<br>chaque nombre dans le message chiffré correspond à la position du mot déchiffré dans le dictionnaire.<br>
+            <hr>
+            Votre mission est donc d’<b>afficher à l’écran le message déchiffré.</b><br>
+            BONUS: Pouvez vous dire qui est le sujet du texte déchiffré ?
+            
+            
+            
+    </p>
+    <script>
+
+        const message_crypted = "19&81&40&6&15&36&47&50&75&19&80&40&36&21&7&86&61&58&62&11&34&68&36&67&84&12&51&23&84&79&21&54&37&83&23&4&35&32&49&10&2&61&33&84&12&21&54&27&26&9&21&50&24&21&63&48&42&15&25&20&23&0&8&35&83&17&56&21&45&78&43&21&74&70&23&6&87&1&23&76&52&49&39&64&60&40&18&78&55&30&21&50&38&66&71&69&41&16&72&78&82&78&85&21&50&15&28&3&14&78&5&88&53&77&38&29&31&71&16&57&73&78&46&21&82&65&33&78&22&21&13&59";
+        const dictionnary = ["max", "dirigée", "les", "ce", "lorenz", "dispositifs", "une", "nombreuses", "newman", "lors", "partenariat).", "celles", "code", "communication", "sont", "machine", "pour", "au", "conçu", "il", "conçue", "de", "blocs", "par", "conception", "fut", "utilisées", "furent", "enigma.", "machines", "améliorées", "enigma", "siemens", "sur", "qui", "et", "à", "(machine", "«", "1943.", "également", "utilisée", "cette", "postes", "il", "recherche", "ensembles", "coder", "colossus.", "en", "la", "généré", "flowers", "associant", "fish", "versions", "laboratoire", "éliminer", "mathématiques,", "d'enigma.", "a", "recherches", "comme", "l'ordinateur", "turing", "potentielles", "bombe", "casser", "aboutiront", "polonaise", "hill", "»", "trouver", "rapidement", "dollis", "voix.", "thomas", "plusieurs", "des", "téléscripteur", "contribue", "conçoit", "clés", "construite", "le", "messages", "autres", "équipe", "électromécaniques"];
+
+        let result    = "";
+
+        // on crée le tableau des positions des mots
+        let positions = message_crypted.split("&");
+            
+        // on passe en revue chaque position
+        for(let j=0; j<positions.length; j++){
+            
+            // on concatène chaque mot trouvé dans le dictionnaire grace à la position
+            result = result.concat(dictionnary[positions[j]], ' ');
+        }
+        
+        document.write("<h3>Message déchiffré : "+result+"</h3>");
+        document.write("<h2>Alan Turing</h2>");
+    </script>
+</body>
+</html>

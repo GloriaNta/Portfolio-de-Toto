@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+div{
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+
+.taille{
+    width: 200px;
+}
+
+img.boite{
+    display:block;
+    margin-bottom: 10px;
+}
+
+h1{
+    display: inline;
+    margin-left: 20px;
+}  
+
+/* N'affiche pas la propriété*/
+img.supprime{
+    display: none;
+}
+
+ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid dodgerblue;
+    border-radius: 20px;
+    background-color:cornflowerblue;
+}
+
+ul li a{
+    color:white;
+    text-decoration: none;
+}
+
+ul li a:hover{
+    color:darkslateblue;
+}

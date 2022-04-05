@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/*@media screen and (max-width: 480px){
+     Ici du code s'appliquant aux écrans de moins de 480 pixels de large 
+}*/
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    max-width: 480px;
+    margin: auto;
+}
+
+.covid{
+    background-image:image()
+}
+
+.card-img{
+    width: 480px;
+}

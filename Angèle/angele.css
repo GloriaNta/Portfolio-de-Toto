@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw; 
+}
+
+/* =============================  HEADER  ======================== */
+
+header{
+    height: 600px;
+    margin: 0;
+    padding: 0;
+}
+
+/* =====  NAV  ===== */
+
+nav{
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right top, #FFCAC8, #FB625D);
+}
+
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 9rem;
+    font-weight: bold;
+    color: white;
+    width: 10px;
+    text-align: center;
+    margin-left: 10%;
+}
+
+img{
+    margin-bottom: 0;
+}

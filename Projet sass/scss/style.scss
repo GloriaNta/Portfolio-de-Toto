@@ -1,0 +1,15 @@
+$black : #010000;
+$red : rgb(190, 72, 72);
+
+.black{
+    background-color: $black;
+}
+
+.red{
+    background-color: $red;
+}
+
+.flex-evenly{
+    display: flex;
+    
+}

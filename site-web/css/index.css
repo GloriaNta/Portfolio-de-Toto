@@ -1,0 +1,104 @@
+/* index.css : feuille de style qui s'applique uniquement à la page d'accueil (index.html) */
+
+	/* Contenu principal du site web (.site-main) */
+
+.site-main header img{
+	border-radius: 50%;
+	border-style: solid;
+	border-color: white;
+	margin-top: 20px;
+}
+
+h1{
+	font-size: 46px;
+	font-weight: bold;
+	color: white;
+}
+.site-main header p{
+	font-size: 20px;
+	color: #ddebff;
+}
+
+.site-main header ul{
+	list-style-position: inside;
+	text-align: justify;
+	display: inline-block;
+}
+
+h2{
+	font-size : 38px;
+	font-weight: bold;
+	color: white;
+}
+
+.site-main article video{
+	border-radius: 10%;
+}
+
+/* Asrto cats */
+
+h3{
+	font-size: 28px;
+	font-weight: bold;
+	color: white;
+}
+
+.site-main article p{
+	font-size: 17px;
+	color: #ddebff;
+}
+
+/* Aside */
+
+.site-main aside h2{
+	font-size: 38px;
+	font-weight: bold;
+	color: white;
+}
+
+.site-main aside p{
+	font-size: 20px;
+	color: #ddebff;
+}
+
+.site-main aside a{
+	font-size: 20px;
+	font-weight: bold;
+	color: #ddebff;
+	border-radius: 25px;
+	display: inline-block;
+	padding: 0 10px 10px;
+}
+
+.site-main aside a:hover{
+	background-color: #071e3f;
+	border-radius: 25px;
+	display: inline-block;
+}
+
+.site-main aside a.active{
+	background-color: #195ec5;
+	border-radius: 25px;
+	display: inline-block;
+}
+
+.site-main article a{
+	font-size: 20px;
+	font-weight: bold;
+	color: #ddebff;
+	border-radius: 25px;
+	display: inline-block;
+	padding: 0 10px 10px;
+}
+
+.site-main article a:hover{
+	background-color: #071e3f;
+	border-radius: 25px;
+	display: inline-block;
+}
+
+.site-main article a.active{
+	background-color: #195ec5;
+	border-radius: 25px;
+	display: inline-block;
+}

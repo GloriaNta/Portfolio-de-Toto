@@ -1,0 +1,124 @@
+/* site.css : feuille de style qui s'applique à toutes les pages du site web */
+
+	/* Reset */
+
+* {
+	box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul {
+	margin: 0;
+}
+
+	/* Règles générales */
+
+body {
+	background-image: url("../images/motif-arriere-plan.jpg");
+	font-family: 'Nunito', sans-serif;
+	color: #ddebff;
+	font-size: 17px;
+	text-align: center;
+}
+
+a{
+	color: #ddebff;
+}
+
+h1, h2, h3 {
+	color: white;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 46px;
+	margin-bottom: 14px;
+}
+
+h2 {
+	font-size: 38px;
+	margin-bottom: 14px;
+}
+
+h3 {
+	font-size: 28px;
+	margin-bottom: 8px;
+}
+
+ul, p{
+	margin-bottom: 14px;
+}
+
+p, li{
+	line-height: 1.2;
+}
+
+.bouton {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	background-color: #071e3f;
+	border-radius: 20px;
+	display: inline-block;
+	padding: 10px;
+}
+
+.bouton:hover{
+	background-color: #195ec5;
+}
+
+	/* Entête du site web (.site-header) */
+
+.site-header {
+	margin-top: 25px;
+	margin-bottom: 23px;
+}
+
+.site-header .logo {
+	font-family: 'Damion', cursive;
+	font-size: 108px;
+	color: white;
+	text-decoration: none;
+	text-shadow: 0px 0px 20px #092043;
+}
+
+.site-header nav a {
+	font-size: 25px;
+	color: #a6c0e8;
+	text-decoration: none;
+}
+
+.site-header nav a:not(:last-child){
+	margin-right: 12px;
+}
+
+.site-header nav a:hover{
+	color: #ddebff;
+}
+
+.site-header nav .en-cours{
+	color: #ddebff;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+	/* Contenu principal du site web (.site-main) */
+
+.site-main header {
+	margin-bottom: 35px;
+}
+
+.site-main header p,
+.site-main header ul {
+	font-size: 20px;
+}
+
+	/* Pied de page du site web (.site-footer) */
+
+.site-footer{
+	background-color:#0e2b57;
+}
+
+.site-footer p{
+	font-style: italic;
+}

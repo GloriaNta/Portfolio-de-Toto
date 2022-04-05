@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+*{box-sizing: border-box;}
+
+#container{
+    /* Je declare ma grille */
+    display: grid;
+
+    /* Je declare le nb de cellule dans ma grille et la taille de mes cellules */
+    grid-template-columns: repeat(12,1fr);
+
+    /* Je declare que les lignes elle vont s'incrementer au fur et à mesure des mes déclarations */
+    grid-template-rows: auto;
+
+
+    /*column-gap 15px;
+    row-gap: 10px;*/
+
+    /* Les goutières horizontales et verticales */
+    grid-gap: 10px;
+
+    /* Je garde la fluiditié du % mais je stop à 1200px */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    border: 2px solid plum;
+    padding: 5px; 
+}
+
+.box{
+    background-color:#c1b5da;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Mon bloc header commence à la cellule 1, il prends 12 espaces et se trouve en ligne 1 */
+
+header{
+    grid-column: 1 / span 12;
+    grid-row: 1;
+}
+
+main{
+    grid-column: 1 / span 6;
+    grid-row: 2;
+}
+
+aside{
+    grid-column: 10 / span 3;
+    grid-row: 2;
+}
+
+footer{
+    grid-column: 1 / span 12;
+    grid-row: 3;
+}

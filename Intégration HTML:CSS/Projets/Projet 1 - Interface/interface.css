@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+/* Permet de faire défiler l'écran selon le menu choisi */
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    width: 20%;
+    height: 180%;
+    background-color:rgb(26, 41, 63);
+    color: honeydew;
+    text-align: end;
+}
+
+#container{
+    position: absolute;
+    width: 80%;
+    height: 180%;
+    left: 20%;
+    padding: 15px;
+}
+
+nav, a{
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(82, 115, 207);
+    text-align: end;
+    margin-right: 15%;
+}
+
+h1{
+    width: 280px;
+    height: 37vh;
+    font-size: 4.7rem;
+    color: rgb(224, 185, 85);
+    margin-left: 35px;
+} 
+
+h2{
+    width: 140px;
+    font-size: 2.1rem;
+    margin-left: 35px;
+}
+
+#deux{
+     height: 54vh;
+}
+
+#deux p{
+    width: 50%;
+    margin: 10px;
+}
+
+img{
+    width: 30%;
+}
+
+.portraitun{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.portraitdeux{
+    position: absolute;
+    top: 30%;
+    right: 0%;
+}
+
+.testimonials{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.mark{
+    width: 80%;
+    margin-left: 55px;
+}
+
+button{
+    height: 75px;
+    width: 75px;
+    background-color: rgb(224, 185, 85);
+    color: honeydew;
+}
+
+p{
+    text-align: left;
+}
+
+#ligne{
+    background-color: goldenrod;
+    z-index: 1;
+    position: relative;
+    height: 3px;
+    width: 360px;
+}
+
+.colonnes{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+h3.un, p.un{
+    margin-left: 50%;
+    width: 17%;
+}
+
+p.deux{
+    margin-left: 75%;
+    width: 17%;
+}
+
+p.trois{
+    margin-left: 55px;
+    width: 35%;
+}
+
+.groupe{
+    width: 40%;
+    margin-left: 35px;
+    margin-top: 10%;
+}
+
+.femme{
+    margin-left: 50%;
+    width: 40%;
+}
+
